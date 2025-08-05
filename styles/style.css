@@ -8,14 +8,21 @@ html {
   block-size: 100%;
 }
 
+:root {
+  --font-family: 'Oswald', sans-serif;
+}
+
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 h1,
@@ -37,15 +44,98 @@ ol {
   list-style: none;
 }
 
+.content {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  width: 1140px;
+  margin: 133px 30px;
+}
+
+.result__video-container {
+  width: 711px;
+  height: 456px;
+  margin-bottom: 16px;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.title {
+  padding-bottom: 16px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  gap: 40px;
+}
+
+.content__details {
+  width: 100%;
+  height: 100%;
+}
+
+/*.title {
+  padding-bottom: 28px;
+  color: #FFF;
+  font-family: var(--font-family);
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+} */
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 298px;
+  overflow: auto;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__video-card-thumbnail {
+  min-width: 194px;
+  height: 103px;
+  object-fit: cover;
+}
+
+.content__video-card-description-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 /* Кастомный скроллбар */
+
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: rgb(217 217 217 / 10%);
+  background: rgb(217 217 217 / 0.1);
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
