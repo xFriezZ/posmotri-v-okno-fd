@@ -121,13 +121,13 @@ ol {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   padding: 2.5px 14px 2.5px 0;
-  color: #fff;
+  color: inherit;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: normal;
-  background-color: #1b1919;
+  background-color: inherit;
   appearance: none;
 }
 
@@ -178,7 +178,7 @@ ol {
   line-height: normal;
 }
 
-.search-form__label:hover span {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -202,6 +202,10 @@ ol {
   background-color: #545050;
 }
 
+.button:focus {
+  outline: none;
+}
+
 .button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 2px;
@@ -217,10 +221,6 @@ ol {
   margin-right: 3px;
   margin-bottom: 2px;
   padding: 6px 0;
-}
-
-.more-button:focus-visible {
-  outline: none;
 }
 
 .content__details {
@@ -249,19 +249,19 @@ ol {
   cursor: pointer;
 }
 
-.content__list-item:focus {
-  outline: none;
-}
-
-.content__list-item:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
-}
-
 .content__card-link {
   display: block;
   color: #fff;
   text-decoration: none;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .content__card-link:active {
@@ -273,7 +273,7 @@ ol {
 }
 
 .content__card-link_current {
-  background-color: #1b1919;
+  background-color: #545050;
 }
 
 .content__video-card {
