@@ -282,7 +282,7 @@ ol {
   align-items: flex-start;
 }
 
-.content__video-card-title {
+.content__video-card-title {         
   max-width: 196px;
   overflow: hidden;
   color: #fff;
